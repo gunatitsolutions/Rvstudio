@@ -1,6 +1,6 @@
 {
-  "name": "RvStudio",
-  "short_name": "RvStudio",
+  "name": "rvstudioin",
+  "short_name": "rvstudioin",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#0175C2",
