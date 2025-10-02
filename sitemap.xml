@@ -1,18 +1,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://gunatitsolutions.github.io/RvStudio/</loc>
+        <loc>https://gunatitsolutions.github.io/Rvstudio/</loc>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://gunatitsolutions.github.io/RvStudio/about</loc>
+        <loc>https://gunatitsolutions.github.io/Rvstudio/about</loc>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://gunatitsolutions.github.io/RvStudio/portfolio</loc>
+        <loc>https://gunatitsolutions.github.io/Rvstudio/portfolio</loc>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://gunatitsolutions.github.io/RvStudio/about</loc>
+        <loc>https://gunatitsolutions.github.io/Rvstudio/about</loc>
         <priority>0.8</priority>
     </url>
 </urlset>
