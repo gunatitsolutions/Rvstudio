@@ -1,13 +1,13 @@
 {
   "name": "rvstudioin",
   "short_name": "rvstudioin",
-  "start_url": "/RvStudio",
+  "start_url": "/RvStudio/",
   "display": "standalone",
   "background_color": "#0175C2",
   "theme_color": "#0175C2",
   "description": "A new Flutter project.",
   "orientation": "portrait-primary",
-  "prefer_related_applications": true,
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "icons/Icon-192.png",
