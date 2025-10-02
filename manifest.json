@@ -1,11 +1,11 @@
 {
   "name": "rvstudioin",
   "short_name": "rvstudioin",
-  "start_url": "/RvStudio/",
+  "start_url": "/RvStudio",
   "display": "standalone",
   "background_color": "#0175C2",
   "theme_color": "#0175C2",
-  "description": "RV Studio – Freelance photographer in Rajkot specializing in prewedding photography, portraits, model shoots, and product photography. Professional and creative photography services to capture your special moments.",
+  "description": "A new Flutter project.",
   "orientation": "portrait-primary",
   "prefer_related_applications": true,
   "icons": [
@@ -31,5 +31,10 @@
       "type": "image/png",
       "purpose": "maskable"
     }
-  ]
+  ],
+  "screenshots": [{
+    "src": "images/app_screenshot.webp",
+    "platform": "windows",
+    "label": "PWA is the way!"
+  }]
 }
