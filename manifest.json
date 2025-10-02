@@ -7,7 +7,7 @@
   "theme_color": "#0175C2",
   "description": "RV Studio – Freelance photographer in Rajkot specializing in prewedding photography, portraits, model shoots, and product photography. Professional and creative photography services to capture your special moments.",
   "orientation": "portrait-primary",
-  "prefer_related_applications": false,
+  "prefer_related_applications": true,
   "icons": [
     {
       "src": "icons/Icon-192.png",
