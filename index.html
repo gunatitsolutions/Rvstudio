@@ -14,25 +14,64 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-    <base href="/Rvstudio/">
+  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <title>RV Studio | Freelance Photographer in Rajkot – Prewedding, Portrait, Model & Product Photography</title>
+  <meta name="description" content="RV Studio – Freelance photographer in Rajkot specializing in prewedding photography, portraits, model shoots, and product photography. Professional and creative photography services to capture your special moments.">
+  <meta name="keywords" content="RV Studio Rajkot, RV Studio photography, freelance photographer Rajkot, prewedding photography Rajkot, portrait photography Rajkot, model shoot Rajkot, product photography Rajkot, wedding photographer Rajkot, candid photography Rajkot, professional photographer Rajkot">
+
+  <meta property="og:title" content="RV Studio – Freelance Photographer in Rajkot">
+  <meta property="og:description" content="Specializing in prewedding, portraits, model shoots, and product photography. Capture your memories with RV Studio in Rajkot.">
+  <meta property="og:url" content="https://<username>.github.io/RvStudioin/">
+  <meta property="og:type" content="website">
 
   <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta content="RvStudio" name="apple-mobile-web-app-title">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <meta content="yes" name="mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="rvstudioin" name="apple-mobile-web-app-title">
+  <link href="icons/Icon-192.png" rel="apple-touch-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link href="favicon.png" rel="icon" type="image/png"/>
 
   <title>rvstudioin</title>
-  <link rel="manifest" href="manifest.json">
+  <link href="manifest.json" rel="manifest">
 </head>
 <body>
-  <script src="flutter_bootstrap.js" async></script>
+<script async src="flutter_bootstrap.js"></script>
+<script>
+  let deferredPrompt;
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    deferredPrompt = e;
+  });
+
+  function promptInstall(){
+     deferredPrompt.prompt();
+  }
+
+  // Listen for app install event
+  window.addEventListener('appinstalled', () => {
+    deferredPrompt = null;
+    appInstalled();
+  });
+
+  // Track how PWA was launched (either from browser or as PWA)
+  function getLaunchMode() {
+    const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
+    if(deferredPrompt) hasPrompt();
+    if (document.referrer.startsWith('android-app://')) {
+      appLaunchedAsTWA();
+    } else if (navigator.standalone || isStandalone) {
+      appLaunchedAsPWA();
+    } else {
+      window.appLaunchedInBrowser();
+    }
+  }
+</script>
 </body>
 </html>
